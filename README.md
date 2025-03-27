@@ -45,3 +45,117 @@ mvn spring-boot:run
 ## Autor
 
 Este projeto foi desenvolvido como parte de um checkpoint da disciplina de Arquitetura SOA e Web Services.
+
+## API de Pedidos – `PedidoController`
+
+Base URL: `http://localhost:8080/pedidos`
+
+---
+
+### 🔹 `GET /pedidos`
+
+**Descrição:** Lista todos os pedidos cadastrados.
+
+**Resposta:**
+
+```json
+[
+  {
+    "id": 1,
+    "clienteNome": "João da Silva",
+    "dataPedido": "2025-03-27",
+    "valorTotal": 199.99
+  },
+  ...
+]
+```
+
+---
+
+### 🔹 `GET /pedidos/{id}`
+
+**Descrição:** Retorna os dados de um pedido específico, com base no ID.
+
+**Parâmetros de URL:**
+
+- `id` (Long): ID do pedido que deseja buscar.
+
+**Exemplo de resposta:**
+
+```json
+{
+  "id": 1,
+  "clienteNome": "João da Silva",
+  "dataPedido": "2025-03-27",
+  "valorTotal": 199.99
+}
+```
+
+---
+
+### 🔹 `POST /pedidos`
+
+**Descrição:** Cria um novo pedido.
+
+**Corpo da requisição (JSON):**
+
+```json
+{
+  "clienteNome": "João da Silva",
+  "valorTotal": 299.9
+}
+```
+
+> `dataPedido` será definido automaticamente como a data atual.  
+> `id` será gerado automaticamente.
+
+**Exemplo de resposta:**
+
+```json
+{
+  "id": 2,
+  "clienteNome": "João da Silva",
+  "dataPedido": "2025-03-27",
+  "valorTotal": 299.9
+}
+```
+
+---
+
+### 🔹 `PUT /pedidos/{id}`
+
+**Descrição:** Atualiza os dados de um pedido existente.
+
+**Parâmetros de URL:**
+
+- `id` (Long): ID do pedido a ser atualizado.
+
+**Corpo da requisição (JSON):**
+
+```json
+{
+  "clienteNome": "Maria Oliveira",
+  "valorTotal": 150.0
+}
+```
+
+**Exemplo de resposta:**
+
+```json
+{
+  "id": 2,
+  "clienteNome": "Maria Oliveira",
+  "dataPedido": "2025-03-27",
+  "valorTotal": 150.0
+}
+```
+
+---
+
+### 🔹 `DELETE /pedidos/{id}`
+
+**Descrição:** Deleta um pedido com base no ID.
+
+**Parâmetros de URL:**
+
+- `id` (Long): ID do pedido que deseja excluir.
