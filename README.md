@@ -54,6 +54,8 @@ Base URL: `http://localhost:8080/pedidos`
 
 ### 🔹 `GET /pedidos`
 
+<img src="./imgs/get-all.jpg" width="80%"/>
+
 **Descrição:** Lista todos os pedidos cadastrados.
 
 **Resposta:**
@@ -73,6 +75,8 @@ Base URL: `http://localhost:8080/pedidos`
 ---
 
 ### 🔹 `GET /pedidos/{id}`
+
+<img src="./imgs/get-id.jpg" width="80%"/>
 
 **Descrição:** Retorna os dados de um pedido específico, com base no ID.
 
@@ -94,6 +98,8 @@ Base URL: `http://localhost:8080/pedidos`
 ---
 
 ### 🔹 `POST /pedidos`
+
+<img src="./imgs/post.jpg" width="80%"/>
 
 **Descrição:** Cria um novo pedido.
 
@@ -124,6 +130,8 @@ Base URL: `http://localhost:8080/pedidos`
 
 ### 🔹 `PUT /pedidos/{id}`
 
+<img src="./imgs/put.jpg" width="80%"/>
+
 **Descrição:** Atualiza os dados de um pedido existente.
 
 **Parâmetros de URL:**
@@ -153,6 +161,8 @@ Base URL: `http://localhost:8080/pedidos`
 ---
 
 ### 🔹 `DELETE /pedidos/{id}`
+
+<img src="./imgs/del.jpg" width="80%"/>
 
 **Descrição:** Deleta um pedido com base no ID.
 
