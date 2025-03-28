@@ -3,6 +3,12 @@
 Nome: Gustavo Ferreira Lopes
 rm: 98887
 
+Nome: Eduardo Gomes
+rm: 97919
+
+Nome: Enzo Cunha
+rm: 550985
+
 ## Descrição
 
 Este projeto consiste em uma API REST desenvolvida com Spring Boot para gerenciar pedidos de clientes. A API permite cadastrar, consultar, atualizar e remover pedidos, seguindo os princípios da arquitetura orientada a serviços (SOA). O banco de dados utilizado é o H2, que roda em memória para facilitar os testes.
